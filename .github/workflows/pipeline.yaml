@@ -12,8 +12,7 @@ jobs:
       
       - name: Run Super-Linter
         uses: github/super-linter@v3
-        with:
-          command: 
+        with: 
             cfn-lint --version
             cfn-lint -t *.yaml
         env:
